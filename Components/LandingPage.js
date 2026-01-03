@@ -1,69 +1,49 @@
 "use client"
+import Spline from "@splinetool/react-spline";
+import BlurText from "./BlurText";
 
-import React from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-
-const LandingPage = () => {
+export default function LandingPage() {
     return (
-        <div className="relative min-h-screen bg-[#0a0f1d] overflow-hidden flex flex-col items-center justify-center px-6">
+        <div className="relative w-full min-h-screen bg-black overflow-hidden font-sans">
 
-            <div className="absolute top-[-10%] left-[-10%] w-125 h-125 bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-[-10%] right-[-10%] w-125 h-125 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
 
-            <div className="max-w-7xl w-full flex justify-around items-center z-10">
-
-                <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="flex flex-col gap-6"
-                >
-                    <div className="space-y-2">
-                        <span className="text-emerald-400 text-sm font-bold uppercase tracking-widest">
-                            ACM Student Chapter
-                        </span>
-                        <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter">
-                            VIIT <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-400">ACM</span>
-                        </h1>
-                    </div>
-
-                    <p className="text-2xl md:text-3xl font-medium text-slate-300 italic border-l-4 border-emerald-500 pl-6 py-2">
-                        “We rise by lifting others”
+            <div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-16 pt-24 md:pt-0">
+                {/* Text Content */}
+                <div className="z-10 w-full md:w-1/2 flex flex-col justify-center order-2 md:order-1">
+                    <BlurText
+                        text="Association for Computing Machinery"
+                        delay={150}
+                        animateBy="words"
+                        direction="top"
+                        className="text-4xl md:text-7xl font-bold tracking-tighter text-white leading-tight mb-4"
+                    />
+                    <h2 className="text-xl md:text-2xl text-blue-400 font-medium mb-6">
+                        VIT Pune Student Chapter
+                    </h2>
+                    <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed mb-8">
+                        Advancing computing as a science and profession. Join the premier global community of computing professionals and students.
                     </p>
-                </motion.div>
+                    <div className="flex flex-wrap gap-4">
+                        <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition-all shadow-lg shadow-blue-500/20 active:scale-95">
+                            Our Initiatives
+                        </button>
+                        <button className="px-8 py-3 border border-gray-700 hover:border-gray-500 text-white rounded-full font-semibold transition-all active:scale-95">
+                            Join Chapter
+                        </button>
+                    </div>
+                </div>
 
-                <div className="flex justify-center lg:justify-end">
-                    <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{
-                            duration: 25,
-                            repeat: Infinity,
-                            ease: "linear"
-                        }}
-                        className="relative w-64 h-64 md:w-96 md:h-96"
-                    >
-                        <Image
-                            src="/assets/acmlogo.png"
-                            alt="VIIT ACM Logo"
-                            fill
-                            className="object-contain drop-shadow-[0_0_20px_rgba(16,185,129,0.15)]"
-                        />
-                    </motion.div>
+                {/* Spline Model Container */}
+                <div className="w-full md:w-1/2 h-[45vh] md:h-[80vh] relative order-1 md:order-2 flex items-center justify-center">
+                    <Spline
+                        className="w-full h-full scale-75 md:scale-100"
+                        scene="https://prod.spline.design/5bx7runDgMCS437l/scene.splinecode"
+                    />
                 </div>
             </div>
 
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
-                className="absolute bottom-10 flex flex-col items-center gap-2"
-            >
-                <div className="w-px h-12 bg-linear-to-b from-emerald-500 to-transparent" />
-                <span className="text-[10px] uppercase tracking-[0.3em] text-slate-500">Scroll Journey</span>
-            </motion.div>
+            {/* Bottom Gradient Decor */}
+            <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent pointer-events-none" />
         </div>
     )
 }
-
-export default LandingPage
