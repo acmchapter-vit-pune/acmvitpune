@@ -17,14 +17,14 @@ export default function LandingPage() {
                         direction="top"
                         className="text-4xl md:text-7xl font-bold tracking-tighter text-white leading-tight mb-4"
                     />
-                    <h2 className="text-xl md:text-2xl text-blue-400 font-medium mb-6">
+                    <h2 className="text-xl md:text-2xl text-green-400 font-medium mb-6">
                         VIT Pune Student Chapter
                     </h2>
                     <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed mb-8">
                         Advancing computing as a science and profession. Join the premier global community of computing professionals and students.
                     </p>
                     <div className="flex flex-wrap gap-4">
-                        <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition-all shadow-lg shadow-blue-500/20 active:scale-95">
+                        <button className="px-8 py-3 bg-green-500 hover:bg-green-600 text-black rounded-full font-semibold transition-all shadow-lg shadow-green-500/20 active:scale-95">
                             Our Initiatives
                         </button>
                         <button className="px-8 py-3 border border-gray-700 hover:border-gray-500 text-white rounded-full font-semibold transition-all active:scale-95">
