@@ -2,8 +2,8 @@ import "./globals.css";
 import Navbar from "@/Components/Navbar";
 
 export const metadata = {
-  title: "VIIT ACM CHAPTER",
-  description: "Welcome to ACM VIIT",
+  title: "VIT ACM CHAPTER",
+  description: "Welcome to ACM VIT",
 };
 
 export default function RootLayout({ children }) {

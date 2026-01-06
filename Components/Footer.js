@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="flex-1 flex flex-col gap-3 text-center md:text-left">
                     <h2 className="text-xl md:text-2xl font-bold">About</h2>
                     <p className="text-slate-300 leading-relaxed text-sm md:text-base max-w-md mx-auto md:mx-0">
-                        VIIT ACM Student Chapter aims to provide students unique opportunities
+                        VIT ACM Student Chapter aims to provide students unique opportunities
                         for networking, mentoring and bonding over common interests by
                         offering a range of resources and benefits for students to help them
                         shape the future of computing.
@@ -59,7 +59,7 @@ const Footer = () => {
                         >
                             <Instagram size={20} />
                             <span className="text-sm md:text-base">
-                VIIT ACM Student Chapter
+                VIT ACM Student Chapter
               </span>
                         </a>
                         <a
@@ -78,7 +78,7 @@ const Footer = () => {
             {/* Bottom Section: Copyright */}
             <div className="max-w-7xl mx-auto mt-10 md:mt-16 pt-6 md:pt-8 border-t border-slate-800 text-center">
                 <p className="text-slate-400 text-xs sm:text-sm">
-                    Copyright © 2026 All Rights Reserved by VIIT ACM.
+                    Copyright © 2026 All Rights Reserved by VIT ACM.
                 </p>
             </div>
         </footer>

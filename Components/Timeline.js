@@ -43,7 +43,7 @@ const Timeline = () => {
                     transition={{ delay: 0.2 }}
                     className="inline-block mb-4 px-4 py-1 text-xs font-semibold bg-white text-black rounded-full"
                 >
-                    ACM VIIT
+                    ACM VIT
                 </motion.span>
 
                 <motion.h1

@@ -51,7 +51,7 @@ const page = () => {
                     className="inline-block px-4 py-1.5 mb-6 border border-green-500/30 rounded-full bg-green-500/5 backdrop-blur-sm"
                 >
                     <span className="text-green-500 tracking-[0.2em] text-xs font-bold uppercase">
-                        ACM VIIT
+                        ACM VIT
                     </span>
                 </motion.div>
 
@@ -88,7 +88,7 @@ const page = () => {
                             </li>
                             <li className="flex justify-between border-b border-white/5 pb-2">
                                 <span>Venue:</span>
-                                <span className="text-white font-medium">Main Auditorium, VIIT</span>
+                                <span className="text-white font-medium">Main Auditorium, VIT</span>
                             </li>
                             <li className="flex justify-between border-b border-white/5 pb-2">
                                 <span>Format:</span>
@@ -177,7 +177,7 @@ const page = () => {
                         </div>
                         <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
                             <p>
-                                Organised by the <span className="text-white font-medium">ACM VIIT</span>,
+                                Organised by the <span className="text-white font-medium">ACM VIT</span>,
                                 students of TE ENTC participated to bridge the gap between academia and
                                 practical science.
                             </p>
