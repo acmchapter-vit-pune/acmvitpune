@@ -1,36 +1,45 @@
 "use client"
-
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import fs from 'fs'
+import path from 'path'
 
-const GalleryPage = () => {
-    const galleryImages = [
-        { id: 1, src: "/assets/gallery/image1.png", alt: "Event 1" },
-        { id: 2, src: "/assets/gallery/image2.png", alt: "Event 2" },
-        { id: 3, src: "/assets/gallery/image3.png", alt: "Event 3" },
-        { id: 4, src: "/assets/gallery/image4.png", alt: "Event 4" },
-        { id: 5, src: "/assets/gallery/image5.png", alt: "Event 5" },
-        { id: 6, src: "/assets/gallery/image6.png", alt: "Event 6" },
-        { id: 7, src: "/assets/gallery/image7.png", alt: "Event 7" },
-        { id: 8, src: "/assets/gallery/image8.png", alt: "Event 8" },
-        { id: 9, src: "/assets/gallery/image9.png", alt: "Event 9" },
-        { id: 10, src: "/assets/gallery/image10.png", alt: "Event 10" },
-        { id: 11, src: "/assets/gallery/image11.png", alt: "Event 11" },
-        { id: 12, src: "/assets/gallery/image12.png", alt: "Event 12" },
-        { id: 13, src: "/assets/gallery/image13.png", alt: "Event 13" },
-        { id: 14, src: "/assets/gallery/image14.png", alt: "Event 14" },
-        { id: 15, src: "/assets/gallery/image15.png", alt: "Event 15" },
-    ];
+async function generateGalleryImages() {
+    const baseDir = path.join(process.cwd(), 'public/assets/events')
+    const folders = ['codesprint', 'Enigma', 'social-event']
+    const galleryImages = []
+    let id = 1
+
+    folders.forEach(folder => {
+        const folderPath = path.join(baseDir, folder)
+        if (fs.existsSync(folderPath)) {
+            const files = fs.readdirSync(folderPath)
+                .filter(file => /\.(png|jpg|jpeg|webp)$/i.test(file))
+                .sort() // Optional: sort for consistent order
+            files.forEach(file => {
+                galleryImages.push({
+                    id: id++,
+                    src: `/assets/events/${folder}/${file}`,
+                    alt: `${folder.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())} - ${path.parse(file).name}`
+                })
+            })
+        }
+    })
+    return galleryImages
+}
+
+const GalleryPage = async () => {
+    const galleryImages = await generateGalleryImages()
 
     const chunkArray = (arr, size) => {
         return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
             arr.slice(i * size, i * size + size)
-        );
-    };
+        )
+    }
 
-    const initialImages = galleryImages.slice(0, 6);
-    const scrollRows = chunkArray(galleryImages.slice(6), 3);
+    const initialImages = galleryImages.slice(0, 6)
+    const scrollRows = chunkArray(galleryImages.slice(6), 3)
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -38,7 +47,7 @@ const GalleryPage = () => {
             opacity: 1,
             transition: { staggerChildren: 0.15 }
         }
-    };
+    }
 
     const itemVariants = {
         hidden: { opacity: 0, x: 80 },
@@ -47,21 +56,21 @@ const GalleryPage = () => {
             x: 0,
             transition: { duration: 0.7, ease: "easeOut" }
         }
-    };
+    }
 
     return (
-        <div className="h-full bg-[#0a0f1d] px-6 py-28  text-white font-sans">
+        <div className="h-full bg-[#0a0f1d] px-6 py-28 text-white font-sans">
             {/* Header Section */}
-            <div className="text-center mb-16">
-                <motion.h2
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="text-4xl font-bold tracking-tight"
-                >
+            <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="text-center mb-16"
+            >
+                <h2 className="text-4xl font-bold tracking-tight">
                     ACM <span className="text-green-400">Gallery</span>
-                </motion.h2>
+                </h2>
                 <div className="h-1 w-20 bg-green-500 mx-auto mt-4 rounded-full shadow-[0_0_10px_#22c55e]" />
-            </div>
+            </motion.div>
 
             <div className="max-w-6xl mx-auto space-y-8">
                 <motion.div
@@ -95,17 +104,20 @@ const GalleryPage = () => {
     )
 }
 
-const ImageCard = ({ image, variants }) => (
-    <motion.div variants={variants} className="relative group">
+const ImageCard = React.forwardRef(({ image, variants }, ref) => (
+    <motion.div ref={ref} variants={variants} className="relative group">
         <div className="relative aspect-video overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl transition-all duration-500 group-hover:border-green-500/50">
             <Image
                 src={image.src}
                 alt={image.alt}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
         </div>
     </motion.div>
-)
+))
 
-export default GalleryPage;
+ImageCard.displayName = 'ImageCard'
+
+export default GalleryPage
