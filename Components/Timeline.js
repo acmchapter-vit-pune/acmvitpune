@@ -6,10 +6,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const events = [
-    { id: 1, title: "Placement-Diaries", desc: "An interactive and insightful online event which will guide you on your road to placements", side: "left", logo: "/assets/card1.png" },
-    { id: 2, title: "Interlock", desc: "Interlock a team game to solve aptitude and coding questions on multiple machines presented in an interlocked fashion.", side: "right", logo: "/assets/card2.png" },
-    { id: 3, title: "Enigma", desc: "An event series that features hackathon, seminar, coding-contest, workshop, panel-discussion.", side: "left", logo: "/assets/card3.png" },
-    { id: 4, title: "Horizon", desc: "Join us and our guest speakers currently working in famed companies like IBM, Accenture and Google", side: "right", logo: "/assets/card4.png" },
+    { id: 1, title: "Code-Sprint", desc: "ACM Codesprint was a competitive coding event organized to encourage students to enhance their technical and problem-solving skills.", side: "left", logo: "/assets/card3.png" },
+    { id: 2, title: "Enigma", desc: "An event series that features hackathon, seminar, coding-contest, workshop, panel-discussion.", side: "right", logo: "/assets/card2.png" },
+    { id: 3, title: "Social-Event", desc: "Social Outreach Event", side: "left", logo: "/assets/card4.png" },
 ];
 
 const Timeline = () => {
@@ -43,7 +42,7 @@ const Timeline = () => {
                     transition={{ delay: 0.2 }}
                     className="inline-block mb-4 px-4 py-1 text-xs font-semibold bg-white text-black rounded-full"
                 >
-                    ACM VIT
+                    ACM VIIT
                 </motion.span>
 
                 <motion.h1
@@ -99,7 +98,7 @@ const Timeline = () => {
             </motion.section>
 
             <div className="text-center mb-24">
-                <h2 className="text-4xl font-bold">Our Journey · 2021–22</h2>
+                <h2 className="text-4xl font-bold">Our Journey · 2024–25</h2>
                 <div className="h-1 w-20 bg-green-500 mx-auto mt-4 rounded-full" />
             </div>
 
