@@ -19,7 +19,7 @@ const page = () => {
     });
 
     return (
-        <section className="relative w-full py-32 overflow-hidden bg-linear-to-br from-black via-slate-900 to-black text-white">
+        <section className="relative w-full py-20 sm:py-24 md:py-32 overflow-hidden bg-linear-to-br from-black via-slate-900 to-black text-white">
             {/* --- BACKGROUND ELEMENTS --- */}
 
             {/* Animated Reading Progress */}
@@ -34,16 +34,16 @@ const page = () => {
             <motion.div
                 animate={{ y: [0, -20, 0], opacity: [0.1, 0.2, 0.1] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-20 right-[10%] w-64 h-64 bg-green-500/10 rounded-full blur-[80px]"
+                className="absolute top-20 right-[10%] w-48 h-48 sm:w-64 sm:h-64 bg-green-500/10 rounded-full blur-[80px]"
             />
             <motion.div
                 animate={{ y: [0, 30, 0], opacity: [0.05, 0.15, 0.05] }}
                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-40 left-[5%] w-96 h-96 bg-slate-500/10 rounded-full blur-[100px]"
+                className="absolute bottom-40 left-[5%] w-64 h-64 sm:w-96 sm:h-96 bg-slate-500/10 rounded-full blur-[100px]"
             />
 
             {/* ---------- HERO SECTION ---------- */}
-            <div className="relative max-w-5xl mx-auto px-6 text-center mb-32">
+            <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center mb-16 sm:mb-24 md:mb-32">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -58,20 +58,20 @@ const page = () => {
                 <motion.h1
                     {...fadeUp}
                     transition={{ duration: 0.8 }}
-                    className="text-6xl md:text-6xl font-black mb-8 text-white text-balance"
+                    className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 sm:mb-8 text-white text-balance px-2"
                 >
                     Code Sprint 2026
                 </motion.h1>
 
                 {/* ---------- EVENT SPECIFICS (Details & Rules) ---------- */}
-                <div className="relative max-w-6xl mx-auto px-6 mb-40 grid md:grid-cols-2 gap-8">
+                <div className="relative max-w-6xl mx-auto px-4 sm:px-6 mb-20 sm:mb-32 md:mb-40 grid md:grid-cols-2 gap-6 sm:gap-8">
                     {/* Event Details Card */}
                     <motion.div
                         {...fadeUp}
-                        className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md relative overflow-hidden group"
+                        className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md relative overflow-hidden group"
                     >
                         <div className="absolute top-0 right-0 w-24 h-24 bg-green-500/10 blur-3xl rounded-full -mr-10 -mt-10" />
-                        <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-3">
                             <span className="p-2 bg-green-500/20 rounded-lg text-green-500">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                             </span>
@@ -191,13 +191,13 @@ const page = () => {
             </div>
 
             {/* ---------- REPRESENTATIVES ---------- */}
-            <div className="relative max-w-6xl mx-auto px-6 mb-40">
-                <div className="flex flex-col items-center mb-16">
-                    <motion.h3 {...fadeUp} className="text-3xl font-bold text-white mb-2">Our Representatives</motion.h3>
-                    <motion.div {...fadeUp} className="h-1 w-20 bg-green-500 rounded-full" />
+            <div className="relative max-w-6xl mx-auto px-4 sm:px-6 mb-20 sm:mb-32 md:mb-40">
+                <div className="flex flex-col items-center mb-10 sm:mb-16">
+                    <motion.h3 {...fadeUp} className="text-2xl sm:text-3xl font-bold text-white mb-2 px-4 text-center">Our Representatives</motion.h3>
+                    <motion.div {...fadeUp} className="h-1 w-16 sm:w-20 bg-green-500 rounded-full" />
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
                     {["bg-emerald-800", "bg-orange-800", "bg-green-800", "bg-slate-800"].map((color, i) => (
                         <motion.div
                             key={i}
@@ -221,12 +221,12 @@ const page = () => {
             </div>
 
             {/* ---------- GLIMPSES ---------- */}
-            <div className="relative max-w-6xl mx-auto px-6">
-                <motion.h3 {...fadeUp} className="text-center text-3xl font-bold text-white mb-16">
+            <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+                <motion.h3 {...fadeUp} className="text-center text-2xl sm:text-3xl font-bold text-white mb-10 sm:mb-16 px-4">
                     Event Glimpses
                 </motion.h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
                     {[
                         { src: "/img_acm.JPG", delay: 0 },
                         { src: "/img_acm.JPG", delay: 0.2 }

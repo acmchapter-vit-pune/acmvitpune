@@ -576,6 +576,7 @@ const FacultyCard = ({ name, position, image }) => {
                         src={image}
                         alt={name}
                         fill
+                        quality={95}
                         sizes="(max-width: 640px) 80vw, (max-width: 1024px) 35vw, 300px"
                         className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 group-hover:translate-y-1"
                     />
@@ -618,6 +619,7 @@ const TeamMemberCard = ({
                         src={imageSrc}
                         alt={name}
                         fill
+                        quality={95}
                         sizes="96px"
                         priority={priority}
                         className="object-cover transition-transform duration-700 group-hover:scale-110"

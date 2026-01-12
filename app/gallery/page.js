@@ -50,22 +50,22 @@ const GalleryPage = () => {
     };
 
     return (
-        <div className="h-full bg-[#0a0f1d] px-6 py-28  text-white font-sans">
+        <div className="h-full bg-[#0a0f1d] px-4 sm:px-6 py-20 sm:py-24 md:py-28 text-white font-sans">
             {/* Header Section */}
-            <div className="text-center mb-16">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-4xl font-bold tracking-tight"
+                    className="text-3xl sm:text-4xl font-bold tracking-tight"
                 >
                     ACM <span className="text-green-400">Gallery</span>
                 </motion.h2>
-                <div className="h-1 w-20 bg-green-500 mx-auto mt-4 rounded-full shadow-[0_0_10px_#22c55e]" />
+                <div className="h-1 w-16 sm:w-20 bg-green-500 mx-auto mt-3 sm:mt-4 rounded-full shadow-[0_0_10px_#22c55e]" />
             </div>
 
-            <div className="max-w-6xl mx-auto space-y-8">
+            <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8">
                 <motion.div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8"
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
@@ -79,7 +79,7 @@ const GalleryPage = () => {
                 {scrollRows.map((row, rowIndex) => (
                     <motion.div
                         key={rowIndex}
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8"
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
@@ -102,6 +102,8 @@ const ImageCard = ({ image, variants }) => (
                 src={image.src}
                 alt={image.alt}
                 fill
+                quality={95}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
         </div>

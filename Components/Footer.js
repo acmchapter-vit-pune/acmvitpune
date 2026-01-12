@@ -35,6 +35,7 @@ const Footer = () => {
                             alt={'ACM VIIT Logo'}
                             width={180}
                             height={60}
+                            quality={90}
                             className="object-contain"
                         />
                     </div>
