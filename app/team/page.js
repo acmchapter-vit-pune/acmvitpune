@@ -534,6 +534,31 @@ import { Mail, Github, Linkedin } from "lucide-react";
 import man from "@/public/assets/team/man.jpg";
 import faculty1 from "@/public/assets/team/disha_mam.png";
 import faculty2 from "@/public/assets/team/prashant_sir.png";
+import anvay from "@/public/assets/team/anvay.png";
+import swanandi from "@/public/assets/team/swanandi.jpeg";
+import tejas from "@/public/assets/team/tejas.png";
+import palak from "@/public/assets/team/palak.jpeg";
+import shatavali from "@/public/assets/team/shatavali.jpg";
+import atharva from "@/public/assets/team/atharva.jpg";
+import vedantshingote from "@/public/assets/team/vedantshingote.jpg";
+import abhishek from "@/public/assets/team/abhishek.jpg";
+import gajanan from "@/public/assets/team/gajanan.jpeg";
+import prithviraj from "@/public/assets/team/prithviraj.png";
+import soham from "@/public/assets/team/soham.jpg";
+import amruta from "@/public/assets/team/amruta.png";
+import dhanashri from "@/public/assets/team/dhanashri.jpg";
+import vedantmulmule from "@/public/assets/team/vedantmulmule.png";
+import yashchaware from "@/public/assets/team/yashchaware.jpg";
+import shivam from "@/public/assets/team/shivam.jpg";
+import achala from "@/public/assets/team/achala.jpg";
+import sudiksha from "@/public/assets/team/sudiksha.jpg";
+import atharvabhajan from "@/public/assets/team/atharvabhajan.jpeg";
+import snehal from "@/public/assets/team/snehal.jpg";
+import siddhant from "@/public/assets/team/siddhant.jpeg";
+import atharvvaidya from "@/public/assets/team/atharvvaidya.jpg";
+import tanushka from "@/public/assets/team/tanushka.png";
+import mahi from "@/public/assets/team/mahi.jpg";
+import harsh from "@/public/assets/team/harsh.jpg";
 
 const FacultyCard = ({ name, position, image }) => {
     return (
@@ -651,46 +676,46 @@ const Page = () => {
             name: "Anvay Kulkarni",
             position: "President",
             group: "Core Team",
-            email: "anvay.k@example.com",
-            github: "https://github.com/anvay-kulkarni",
-            linkedin: "https://www.linkedin.com/in/anvay-kulkarni",
-            imageSrc: man,
+            email: "anvay.22311927@viit.ac.in",
+            github: "https://github.com/Anvay14",
+            linkedin: "https://www.linkedin.com/in/anvay-kulkarni-609662279/",
+            imageSrc: anvay,
         },
         {
             name: "Swanandi Kamat",
             position: "Secretary",
             group: "Core Team",
-            email: "swanandi.kamat@example.com",
-            github: "https://github.com/swanandi-kamat",
-            linkedin: "https://www.linkedin.com/in/swanandi-kamat",
-            imageSrc: man,
+            email: "swanandi.22310424@viit.ac.in",
+            github: "https://github.com/swanandikamat",
+            linkedin: "https://www.linkedin.com/in/swanandi-kamat-86aa152a6/",
+            imageSrc: swanandi,
         },
         {
             name: "Tejas Dherange",
             position: "Treasurer",
             group: "Core Team",
-            email: "tejas.dherange@example.com",
-            github: "https://github.com/tejas-dherange",
-            linkedin: "https://www.linkedin.com/in/tejas-dherange",
-            imageSrc: man,
+            email: "tejas.22310593@viit.ac.in",
+            github: "https://github.com/Tejas-Dherange",
+            linkedin: "https://www.linkedin.com/in/tejas-dherange-54a6a627b",
+            imageSrc: tejas,
         },
         {
             name: "Shatavali Bahadure",
-            position: "Event Coordinator",
+            position: "Event Management",
             group: "Core Team",
-            email: "shatavali.bahadure@example.com",
-            github: "https://github.com/shatavali-bahadure",
-            linkedin: "https://www.linkedin.com/in/shatavali-bahadure",
-            imageSrc: man,
+            email: "shatavali.22310364@viit.ac.in",
+            github: "https://github.com/Shatavali05",
+            linkedin: "https://www.linkedin.com/in/shatavali-bahadure-172509291/",
+            imageSrc: shatavali,
         },
         {
             name: "Palak Gudgila",
             position: "Public Relations Officer",
             group: "Core Team",
-            email: "palak.gudgila@example.com",
+            email: "palak.22311889@viit.ac.in",
             github: "https://github.com/palak-gudgila",
-            linkedin: "https://www.linkedin.com/in/palak-gudgila",
-            imageSrc: man,
+            linkedin: "https://www.linkedin.com/in/palak-gudgila/",
+            imageSrc: palak,
         },
 
         // Technical & Web
@@ -701,7 +726,7 @@ const Page = () => {
             email: "vedant.22310585@viit.ac.in",
             phone: "7249105995",
             github: "https://github.com/vedant-shendge",
-            linkedin: "https://www.linkedin.com/in/vedant-shendge",
+            linkedin: "https://www.linkedin.com/in/vedant-shendge-a1258b2b4/",
             imageSrc: man,
         },
         {
@@ -710,9 +735,9 @@ const Page = () => {
             group: "Technical & Web",
             email: "vedant.22310590@viit.ac.in",
             phone: "9307091897",
-            github: "https://github.com/vedant-shingote",
-            linkedin: "https://www.linkedin.com/in/vedant-shingote",
-            imageSrc: man,
+            github: "https://github.com/Vedant-Shingote",
+            linkedin: "https://www.linkedin.com/in/vedant-shingote-1827802a8/",
+            imageSrc: vedantshingote,
         },
         {
             name: "Gajanan Tongale",
@@ -720,9 +745,9 @@ const Page = () => {
             group: "Technical & Web",
             email: "rajendra.22311256@viit.ac.in",
             phone: "8295976607",
-            github: "https://github.com/gajanan-tongale",
-            linkedin: "https://www.linkedin.com/in/gajanan-tongale",
-            imageSrc: man,
+            github: "https://github.com/GajananTongale",
+            linkedin: "https://www.linkedin.com/in/gajanan-tongale-828a2b33b/",
+            imageSrc: gajanan,
         },
         {
             name: "Prithviraj Patil",
@@ -730,9 +755,9 @@ const Page = () => {
             group: "Technical & Web",
             email: "prithvirajpatil495@gmail.com",
             phone: "9970907885",
-            github: "https://github.com/prithviraj-patil",
-            linkedin: "https://www.linkedin.com/in/prithviraj-patil",
-            imageSrc: man,
+            github: "https://github.com/Prithvi2321",
+            linkedin: "https://www.linkedin.com/in/prithviraj-patil-3a1814330/",
+            imageSrc: prithviraj,
         },
         {
             name: "Abhishek Kadu",
@@ -741,8 +766,8 @@ const Page = () => {
             email: "abhishek.22311167@viit.ac.in",
             phone: "8530283963",
             github: "https://github.com/abhishek-kadu",
-            linkedin: "https://www.linkedin.com/in/abhishek-kadu",
-            imageSrc: man,
+            linkedin: "https://www.linkedin.com/in/abhishek-kadu1/",
+            imageSrc: abhishek,
         },
         {
             name: "Atharva Belavanki",
@@ -750,9 +775,9 @@ const Page = () => {
             group: "Technical & Web",
             email: "atharva.22311353@viit.ac.in",
             phone: "7620424588",
-            github: "https://github.com/atharva-belavanki",
-            linkedin: "https://www.linkedin.com/in/atharva-belavanki",
-            imageSrc: man,
+            github: "https://github.com/atharvabelavanki",
+            linkedin: "https://www.linkedin.com/in/atharva-belavanki-4565932b4",
+            imageSrc: atharva,
         },
 
         // Design, Content & Documentation
@@ -772,9 +797,9 @@ const Page = () => {
             group: "Design, Content & Documentation",
             email: "shivam.22310019@viit.ac.in",
             phone: "9011967964",
-            github: "https://github.com/shivam-shinde",
-            linkedin: "https://www.linkedin.com/in/shivam-shinde",
-            imageSrc: man,
+            github: "https://github.com/Shivam-codex",
+            linkedin: "https://www.linkedin.com/in/shivam-shinde-08a181289/",
+            imageSrc: shivam,
         },
         {
             name: "Soham Zinjurke",
@@ -783,9 +808,10 @@ const Page = () => {
             email: "soham.22311620@viit.ac.in",
             phone: "9356761788",
             github: "https://github.com/soham-zinjurke",
-            linkedin: "https://www.linkedin.com/in/soham-zinjurke",
-            imageSrc: man,
+            linkedin: "https://www.linkedin.com/in/sohamzinjurke/",
+            imageSrc: soham,
         },
+        
         {
             name: "Vedant Mulmule",
             position: "Documentation Head",
@@ -793,20 +819,49 @@ const Page = () => {
             email: "vedant.mulmule23@vit.edu",
             phone: "7020539966",
             github: "https://github.com/vedant-mulmule",
-            linkedin: "https://www.linkedin.com/in/vedant-mulmule",
-            imageSrc: man,
+            linkedin: "https://www.linkedin.com/in/vedant-mulmule-6732642b8/",
+            imageSrc: vedantmulmule,
         },
         {
-            name: "Karad Dhanashri",
+            name: "Dhanashri Karad",
             position: "Jt-Documentation Head",
             group: "Design, Content & Documentation",
             email: "dhanashrikarad19@gmail.com",
             phone: "9284492928",
-            github: "https://github.com/karad-dhanashri",
-            linkedin: "https://www.linkedin.com/in/karad-dhanashri",
+            github: "https://github.com/DhanashriKarad",
+            linkedin: "https://www.linkedin.com/in/dhanashri-karad/",
+            imageSrc: dhanashri,
+        },
+        {
+            name: "Vedika Budhwat",
+            position: "Design Team Member",
+            group: "Design, Content & Documentation",
+            email: "vedika.1251100127@vit.edu",
+            phone: "9607165438",
+            github: "https://github.com/vedikabudhwat07-eng",
+            linkedin: "https://www.linkedin.com/in/vedika-budhwat-946b03385/",
             imageSrc: man,
         },
-
+        {
+            name: "Yash Chaware",
+            position: "Documentation Team Member",
+            group: "Design, Content & Documentation",
+            email: "yash.1251080031@vit.edu",
+            phone: "7721977621",
+            github: "https://www.linkedin.com/in/yash-chaware",
+            linkedin: "https://www.linkedin.com/in/yash-chaware",
+            imageSrc: yashchaware,
+        },
+        {
+            name: "Amruta Gavade",
+            position: "Documentation Team Member",
+            group: "Design, Content & Documentation",
+            email: "amrutagavade007@gmail.com",
+            phone: "9561624799",
+            github: "www.linkedin.com/in/amruta-gavade-",
+            linkedin: "https://www.linkedin.com/in/amrutagavade007-oss",
+            imageSrc: amruta,
+        },
         // Event & Publicity
         {
             name: "Sudiksha Pardeshi",
@@ -815,8 +870,8 @@ const Page = () => {
             email: "sudiksha.22310260@viit.ac.in",
             phone: "7057927681",
             github: "https://github.com/sudiksha-pardeshi",
-            linkedin: "https://www.linkedin.com/in/sudiksha-pardeshi",
-            imageSrc: man,
+            linkedin: "https://www.linkedin.com/in/sudiksha-pardeshi-011b93386/",
+            imageSrc: sudiksha,
         },
         {
             name: "Achala Patil",
@@ -824,9 +879,9 @@ const Page = () => {
             group: "Event & Publicity",
             email: "achala.patil24@vit.edu",
             phone: "9699878610",
-            github: "https://github.com/achala-patil",
-            linkedin: "https://www.linkedin.com/in/achala-patil",
-            imageSrc: man,
+            github: "https://github.com/Achala-Patil",
+            linkedin: "https://www.linkedin.com/in/achala-patil-718152283/",
+            imageSrc: achala,
         },
         {
             name: "Atharva Bhajan",
@@ -834,9 +889,9 @@ const Page = () => {
             group: "Event & Publicity",
             email: "atharvabhajan0574@gmail.com",
             phone: "9322246114",
-            github: "https://github.com/atharva-bhajan",
-            linkedin: "https://www.linkedin.com/in/atharva-bhajan",
-            imageSrc: man,
+            github: "https://github.com/Atharvabhajan",
+            linkedin: "https://www.linkedin.com/in/atharvabhajan/",
+            imageSrc: atharvabhajan,
         },
         {
             name: "Shreyas Khanore",
@@ -869,14 +924,14 @@ const Page = () => {
             imageSrc: man,
         },
         {
-            name: "Bomble Snehal",
+            name: "Snehal Bomble",
             position: "Jt-Publicity Head",
             group: "Event & Publicity",
             email: "snehal.1252030031@vit.edu",
             phone: "7448121625",
-            github: "https://github.com/bomble-snehal",
-            linkedin: "https://www.linkedin.com/in/bomble-snehal",
-            imageSrc: man,
+            github: "https://github.com/Snehalbomble27",
+            linkedin: "https://www.linkedin.com/in/snehal-bomble-887b73329",
+            imageSrc: snehal,
         },
         {
             name: "Siddhant Ukarde",
@@ -886,7 +941,57 @@ const Page = () => {
             phone: "9359982918",
             github: "https://github.com/siddhant-ukarde",
             linkedin: "https://www.linkedin.com/in/siddhant-ukarde",
+            imageSrc: siddhant,
+        },
+        {
+            name: "Atharv Vaidya",
+            position: "Event team member",
+            group: "Event & Publicity",
+            email: "atharvaidya007@gmail.com",
+            phone: "8623048342",
+            github: "https://github.com/AthvaCodes",
+            linkedin: "https://www.linkedin.com/in/atharv-vaidya-094b69386/",
+            imageSrc: atharvvaidya,
+        },
+        {
+            name: "Tanushka Patil",
+            position: "Event team member",
+            group: "Event & Publicity",
+            email: "tanushka.spatil1987@gmail.com",
+            phone: "9359511080",
+            github: "https://github.com/Tanushka-sp2007",
+            linkedin: "https://www.linkedin.com/in/tanushka-sunil-patil-a87090389",
+            imageSrc: tanushka,
+        },
+        {
+            name: "Mahi Salode",
+            position: "Event team member",
+            group: "Event & Publicity",
+            email: "mahi1962007.s@gmail.com",
+            phone: "8767079226",
+            github: "https://github.com/mahi.salode",
+            linkedin: "https://www.linkedin.com/in/mahi-salode-314334391/",
+            imageSrc: mahi,
+        },
+        {
+            name: "Rajesh Anerao",
+            position: "Publicity team member",
+            group: "Event & Publicity",
+            email: "rajesh.1251040090@vit.edu",
+            phone: "8999322989",
+            github: "https://github.com/rajeshanerao127",
+            linkedin: "https://www.linkedin.com/in/rajesh-anerao-24a236386/",
             imageSrc: man,
+        },
+         {
+            name: "Harsh Bhamre ",
+            position: "Publicity team member",
+            group: "Event & Publicity",
+            email: "harsh.bhamre27@gmail.com",
+            phone: "9403970177",
+            github: "https://github.com/Hershey57",
+            linkedin: "https://www.linkedin.com/in/harsh-bhamre-240692318/",
+            imageSrc: harsh,
         },
     ];
 
