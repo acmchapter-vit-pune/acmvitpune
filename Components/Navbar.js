@@ -305,12 +305,12 @@ const Navbar = () => {
                                 className="object-contain rounded-full"
                             />
                             <Image
-                                src="/assets/acmlogo.png"
+                                src="/assets/img.png"
                                 alt="ACM Logo"
-                                width={80}
-                                height={80}
+                                width={48}
+                                height={48}
                                 priority
-                                className="object-contain"
+                                className="object-contain rounded-full  "
                             />
                         </div>
 

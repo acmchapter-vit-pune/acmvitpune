@@ -12,7 +12,7 @@ import {
 
 const SocialEvent = () => {
     return (
-        <section className="pt-7 bg-[#0a0f1d] w-full max-w-7xl mx-auto px-6 space-y-20 text-white">
+        <section className="pt-30 bg-[#0a0f1d] w-full mx-auto px-6 space-y-20 text-white">
 
             <div className="relative h-105 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl bg-black">
 

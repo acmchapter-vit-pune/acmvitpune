@@ -42,7 +42,7 @@ const Footer = () => {
                         <p>VIIT B Building</p>
                         <p>Kondhwa Budruk, Pune</p>
                         <p className="hover:text-white cursor-pointer transition-colors">
-                            acmchapter@viit.ac.in
+                            acmchapter@vit.edu
                         </p>
                     </div>
                 </div>
