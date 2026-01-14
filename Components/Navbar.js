@@ -38,11 +38,11 @@ const Navbar = () => {
                             <Image
                                 src="/assets/img.png"
                                 alt="ACM Logo"
-                                width={70}
-                                height={70}
+                                width={40}
+                                height={40}
                                 priority
                                 quality={90}
-                                className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                                className="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-full"
                             />
                         </div>
 
