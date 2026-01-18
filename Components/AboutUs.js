@@ -56,29 +56,55 @@ const AboutUs = () => {
                     {/* IMAGE SIDE */}
                     <motion.div
                         {...floatingAnimation}
-                        className="relative w-full lg:w-1/2 flex justify-center px-4 sm:px-0"
+                        className=" relative
+                                w-full
+                                lg:w-3/5
+                                lg:h-[400px]
+                                lg:mt-25
+                                flex
+                                justify-center
+                                text-center
+                                px-4 sm:px-0
+                                "
                     >
+                        {/* Decorative borders */}
                         <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-20 h-20 sm:w-32 sm:h-32 border-t-2 border-l-2 border-green-500/30 hidden sm:block" />
                         <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-20 h-20 sm:w-32 sm:h-32 border-b-2 border-r-2 border-green-500/30 hidden sm:block" />
 
                         <motion.div
                             whileHover={{ scale: 1.02 }}
-                            className="relative z-10 group w-full flex justify-center"
+                            className="relative z-10 group w-full max-w-md sm:max-w-lg lg:max-w-full"
                         >
-                            <div className="relative w-full min-h-112.5 lg:min-h-full overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 group-hover:shadow-green-500/20 border border-white/5">
+                            {/* Aspect ratio container */}
+                            <div className="
+                                relative
+                                w-full
+                                aspect-[4/3]
+                                lg:aspect-[16/9]
+                                overflow-hidden
+                                rounded-2xl
+                                shadow-2xl
+                                transition-all
+                                duration-500
+                                group-hover:shadow-green-500/20
+                                border
+                                border-white/5
+                            ">
                                 <Image
-                                    src={'/assets/about3.jpeg'}
+                                    src="/assets/about3.jpeg"
                                     alt="ACM Society"
                                     fill
                                     priority
                                     quality={95}
                                     className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 50vw"
                                 />
+
                                 <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             </div>
                         </motion.div>
                     </motion.div>
+
 
                     {/* TEXT SIDE */}
                     <motion.div
@@ -86,7 +112,7 @@ const AboutUs = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="w-full lg:w-1/2 flex"
+                        className="w-full lg:w-2/5 flex"
                     >
                         <div className="bg-black/60 backdrop-blur-xl border border-green-500/30 p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl md:rounded-4xl shadow-[0_0_80px_rgba(34,197,94,0.15)] relative overflow-hidden flex flex-col justify-center w-full">
                             <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-green-400/50 to-transparent" />
