@@ -65,9 +65,9 @@ const AboutUs = () => {
                             whileHover={{ scale: 1.02 }}
                             className="relative z-10 group w-full flex justify-center"
                         >
-                            <div className="relative w-full max-w-md min-h-112.5 lg:min-h-full overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 group-hover:shadow-green-500/20 border border-white/5">
+                            <div className="relative w-full min-h-112.5 lg:min-h-full overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 group-hover:shadow-green-500/20 border border-white/5">
                                 <Image
-                                    src={'/assets/about.png'}
+                                    src={'/assets/about3.jpeg'}
                                     alt="ACM Society"
                                     fill
                                     priority

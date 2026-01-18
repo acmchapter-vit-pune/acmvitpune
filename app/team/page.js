@@ -532,6 +532,7 @@ import { motion } from "framer-motion";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 import man from "@/public/assets/team/man.jpg";
+import woman from "@/public/assets/team/woman.png";
 import faculty1 from "@/public/assets/team/disha_mam.png";
 import faculty2 from "@/public/assets/team/prashant_sir.png";
 import anvay from "@/public/assets/team/anvay.png";
@@ -559,6 +560,11 @@ import atharvvaidya from "@/public/assets/team/atharvvaidya.jpg";
 import tanushka from "@/public/assets/team/tanushka.png";
 import mahi from "@/public/assets/team/mahi.jpg";
 import harsh from "@/public/assets/team/harsh.jpg";
+import vedantshendge from "@/public/assets/team/vedantshendge.png";
+import namrata from "@/public/assets/team/namrata.jpg";
+import shreyas from "@/public/assets/team/shreyas.jpeg";
+import rohan from "@/public/assets/team/rohan.png";
+import rajesh from "@/public/assets/team/rajesh.png";
 
 const FacultyCard = ({ name, position, image }) => {
     return (
@@ -729,7 +735,7 @@ const Page = () => {
             phone: "7249105995",
             github: "https://github.com/vedant-shendge",
             linkedin: "https://www.linkedin.com/in/vedant-shendge-a1258b2b4/",
-            imageSrc: man,
+            imageSrc: vedantshendge,
         },
         {
             name: "Vedant Shingote",
@@ -842,7 +848,7 @@ const Page = () => {
             phone: "9607165438",
             github: "https://github.com/vedikabudhwat07-eng",
             linkedin: "https://www.linkedin.com/in/vedika-budhwat-946b03385/",
-            imageSrc: man,
+            imageSrc: woman,
         },
         {
             name: "Yash Chaware",
@@ -903,7 +909,7 @@ const Page = () => {
             phone: "8626041033",
             github: "https://github.com/shreyas-khanore",
             linkedin: "https://www.linkedin.com/in/shreyas-khanore",
-            imageSrc: man,
+            imageSrc: shreyas,
         },
         {
             name: "Namrata Devare",
@@ -913,7 +919,7 @@ const Page = () => {
             phone: "7715884693",
             github: "https://github.com/namrata-devare",
             linkedin: "https://www.linkedin.com/in/namrata-devare",
-            imageSrc: man,
+            imageSrc: namrata,
         },
         {
             name: "Rohan Wani",
@@ -923,7 +929,7 @@ const Page = () => {
             phone: "8421170651",
             github: "https://github.com/rohan-wani",
             linkedin: "https://www.linkedin.com/in/rohan-wani",
-            imageSrc: man,
+            imageSrc: rohan,
         },
         {
             name: "Snehal Bomble",
@@ -983,7 +989,7 @@ const Page = () => {
             phone: "8999322989",
             github: "https://github.com/rajeshanerao127",
             linkedin: "https://www.linkedin.com/in/rajesh-anerao-24a236386/",
-            imageSrc: man,
+            imageSrc: rajesh,
         },
          {
             name: "Harsh Bhamre ",
