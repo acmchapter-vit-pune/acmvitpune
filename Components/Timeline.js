@@ -70,7 +70,7 @@ const Timeline = () => {
                     transition={{ delay: 0.7 }}
                     className="text-slate-300 leading-relaxed text-sm md:text-base"
                 >
-                    "Code Sprint", a coding competition focused on Data Structures and Algorithms (DSA), provides a unique platform to showcase talent in knowledge-sharing and collaborate for a noble social cause in education.
+                    "Code Sprint 2.0", a coding competition focused on Data Structures and Algorithms , provides a unique platform to showcase talent in knowledge-sharing and collaborate for a noble social cause in education.
                 </motion.p>
 
                 <motion.p

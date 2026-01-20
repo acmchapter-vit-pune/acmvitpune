@@ -4,7 +4,7 @@ import BlurText from "./BlurText";
 
 export default function LandingPage() {
     return (
-        <div className="relative w-full min-h-screen bg-[#0a0f1d] overflow-hidden font-sans">
+        <div className="relative w-full min-h-screen bg-[#0a0f1d] overflow-hidden font-sans pt-7">
 
 
             <div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-4 sm:px-6 md:px-16 pt-20 md:pt-0">
@@ -43,7 +43,7 @@ export default function LandingPage() {
             </div>
 
             {/* Bottom Gradient Decor */}
-            <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-black to-transparent pointer-events-none" />
         </div>
     )
 }
