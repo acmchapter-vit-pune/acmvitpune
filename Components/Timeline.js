@@ -35,6 +35,7 @@ const Timeline = () => {
                 transition={{ duration: 1 }}
                 className="max-w-3xl mx-auto mb-40 rounded-3xl bg-black/70 border border-green-500/30 shadow-[0_0_80px_rgba(34,197,94,0.15)] p-10 text-center"
             >
+
                 <motion.span
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
@@ -70,7 +71,7 @@ const Timeline = () => {
                     transition={{ delay: 0.7 }}
                     className="text-slate-300 leading-relaxed text-sm md:text-base"
                 >
-                    "Code Sprint", a coding competition focused on Data Structures and Algorithms (DSA), provides a unique platform to showcase talent in knowledge-sharing and collaborate for a noble social cause in education.
+                    "Code Sprint 2.0", a coding competition focused on Data Structures and Algorithms , provides a unique platform to showcase talent in knowledge-sharing and collaborate for a noble social cause in education.
                 </motion.p>
 
                 <motion.p
@@ -158,7 +159,6 @@ const Timeline = () => {
                                     </motion.div>
                                 </div>
 
-                                {/* Spacer */}
                                 <div className="w-[44%]" />
                             </div>
                         </Link>
