@@ -85,7 +85,7 @@ const AfterEvent = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
                     {[
-                        { src: "/img_acm.JPG", delay: 0 },
+                        { src: "/imgacm.JPG", delay: 0 },
                         { src: "/img_acm.JPG", delay: 0.2 }
                     ].map((img, idx) => (
                         <motion.div

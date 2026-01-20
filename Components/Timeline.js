@@ -35,6 +35,7 @@ const Timeline = () => {
                 transition={{ duration: 1 }}
                 className="max-w-3xl mx-auto mb-40 rounded-3xl bg-black/70 border border-green-500/30 shadow-[0_0_80px_rgba(34,197,94,0.15)] p-10 text-center"
             >
+
                 <motion.span
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
@@ -158,7 +159,6 @@ const Timeline = () => {
                                     </motion.div>
                                 </div>
 
-                                {/* Spacer */}
                                 <div className="w-[44%]" />
                             </div>
                         </Link>
