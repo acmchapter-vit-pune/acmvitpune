@@ -40,8 +40,8 @@ const Footer = () => {
                         />
                     </div>
                     <div className="text-slate-300 text-sm md:text-base space-y-1">
-                        <p>VIIT B Building</p>
-                        <p>Kondhwa Budruk, Pune</p>
+                        <p>VIT</p>
+                        <p>Bibwewadi,Pune</p>
                         <p className="hover:text-white cursor-pointer transition-colors">
                             acmchapter@vit.edu
                         </p>

@@ -71,7 +71,8 @@ const Timeline = () => {
                     transition={{ delay: 0.7 }}
                     className="text-slate-300 leading-relaxed text-sm md:text-base"
                 >
-                    "Code Sprint 2.0", a coding competition focused on Data Structures and Algorithms , provides a unique platform to showcase talent in knowledge-sharing and collaborate for a noble social cause in education.
+                    24-Hour Hackathon – Coming Soon 🚀
+A high-energy coding marathon where developers, designers, and innovators team up to build impactful solutions in just 24 hours.
                 </motion.p>
 
                 <motion.p
@@ -81,20 +82,20 @@ const Timeline = () => {
                     transition={{ delay: 0.9 }}
                     className="mt-6 text-slate-400"
                 >
-                    Want to compete? Click below
+                   
                 </motion.p>
 
                 <div className="mt-8 flex flex-col gap-4 items-center">
-                    <Link href={'/register'}>
+                    
                         <motion.button
                             animate={{ boxShadow: ["0 0 0px #22c55e", "0 0 25px #22c55e", "0 0 0px #22c55e"] }}
                             transition={{ repeat: Infinity, duration: 2 }}
                             whileHover={{ scale: 1.1 }}
                             className="px-8 py-3 bg-green-500 text-black font-semibold rounded-lg cursor-pointer"
                         >
-                            Register
+                            Coming Soon
                         </motion.button>
-                    </Link>
+                    
                 </div>
             </motion.section>
 
